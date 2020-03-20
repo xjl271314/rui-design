@@ -1,6 +1,10 @@
-// 全局scss环境变量
+// https://ant.design/docs/spec/colors-cn color设计指南
 
-// button尺寸变量
-$rui-button-md : 50px;
-$rui-button-sm : 40px;
-$rui-button-lg : 55px;
+// 全局样式开头
+$prefix-cls: 'rui';
+
+
+// 全局scss环境变量
+$primaryColor: #FFF;
+$primaryBgColor: #fa541c; 
+

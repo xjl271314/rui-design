@@ -1,0 +1,40 @@
+@import 'theme.scss';
+@import './mixin.scss';
+
+$btn-prefix-cls: '#{$prefix-cls}-btn';
+
+.#{$btn-prefix-cls}{
+    @include btnBase;
+    // 尺寸相关 圆角相关
+    &.#{$btn-prefix-cls}{
+        &-lg{
+            height: $lg;
+        }
+        &-md{
+            height: $md;
+        }
+        &-sm{
+            height: $sm;
+        }
+        &-circle{
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 50%;
+            &.#{$btn-prefix-cls}-lg{
+                min-width: $lg;;
+            }
+            &.#{$btn-prefix-cls}-md{
+                min-width: $md;;
+            }
+            &.#{$btn-prefix-cls}-sm{
+                min-width: $sm;;
+            }
+        }
+        &-round{
+            border-radius: 0.5em;
+        }
+    }
+    .circle-hack{
+        background-color: transparent;
+    }
+}

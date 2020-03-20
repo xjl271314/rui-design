@@ -3,7 +3,9 @@ const {
     override,
     addDecoratorsLegacy,
     addWebpackAlias,
-    addPostcssPlugins
+    addPostcssPlugins,
+    fixBabelImports,
+    addLessLoader
 } = require("customize-cra");
 
 module.exports = override(
@@ -19,4 +21,12 @@ module.exports = override(
     }),
     // postcss px转换成rem
     addPostcssPlugins([require('postcss-px2rem')({ remUnit: 75 / 2 })]), 
+    addLessLoader({
+        javascriptEnabled: true,//支持css文件中写入js
+        modifyVars: { "@primary-color": "#1DA57A" }
+    }),
+    // antd
+    fixBabelImports("import", {
+        libraryName: "antd", style: true // change importing css to less
+    })
 )
