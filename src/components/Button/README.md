@@ -1,4 +1,4 @@
-# Button组件设计需求
+<!-- # Button组件设计需求
 
 - type 传入type可以选择已经定义的button类型 ------OK
 - theme css样式button的主题
@@ -11,4 +11,22 @@
 - onClick 按钮的点击事件 -----OK
 - style 传入的外部的style  -----OK
 - waves 是否使用类似谷歌materials design点击按钮的水波纹效果 ----OK
-- 其他原生button支持的属性
+- 其他原生button支持的属性 -->
+ 
+<!-- ---
+name: Button
+route: /button
+---
+ 
+import { Playground, PropsTable } from 'docz'
+import Button from './index.js'
+ 
+# Button
+ 
+<PropsTable of={Button} />
+ 
+## Basic usage
+ 
+<Playground>
+ <Button>Click me</Button>
+</Playground> -->
