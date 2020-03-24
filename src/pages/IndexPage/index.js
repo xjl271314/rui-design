@@ -14,6 +14,15 @@ function Example() {
         type="cutdown" 
         shape="round"
       />
+
+      <Button
+        type="wave" 
+      />
+
+     <Button
+        type="stroke" 
+        shape="round"
+      />
     </div>
   );
 }

@@ -1,10 +1,14 @@
 import React from 'react';
 import CutDown from './CutDown';
 import Bubble from './Bubble';
+import Wave from './Waves';
+import Stroke from './Stroke';
 
 const ButtonTypes = {
 'cutdown':CutDown,
-'bubble':Bubble
+'bubble':Bubble,
+'wave':Wave,
+'stroke': Stroke
 }
 
 const Button = props =>{

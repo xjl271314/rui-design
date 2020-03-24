@@ -1,0 +1,57 @@
+@import '../index.scss';
+
+
+&.#{$btn-prefix-cls} {
+    &-stroke {
+        $mainColor: $primaryBgColor;
+        background-color: $mainColor;
+        color: #fff;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+        overflow: hidden;
+
+        &:not(:disabled) {
+            box-shadow: 0 2px 25px mix($mainColor, #FFF);
+        }
+
+        &:after {
+            content: "";
+            background: #fff;
+            display: block;
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            top: 0;
+            opacity: 0;
+            transition: all 0.75s ease-in-out;
+        }
+        &.half:after{
+            content: "";
+            background: #fff;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            opacity: 0;
+            transition: all 0.75s ease-in-out;
+        }
+
+        &.left:after {
+            left: 0%;
+        }
+
+        &.right:after {
+            right: 0%;
+        }
+
+        &:active:after {
+            width: 0px;
+            opacity: 1;
+            transition: 0s;
+        }
+    }
+}
