@@ -7,10 +7,17 @@ const IndexPage = Loadable({
   loading: Loading,
 })
 
+const TestPage = Loadable({
+  loader: () => import('../pages/plogan'),
+  loading: Loading,
+})
+
+
 function RouterConfig() {
   return (
     <Router>
       <Route path="/" exact component={IndexPage} />
+      <Route path="/test" exact component={TestPage} />
     </Router>
   )
 }
