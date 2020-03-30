@@ -1,0 +1,33 @@
+@import './mixin.scss';
+
+$icon-prefix-cls: '#{$prefix-cls}-icon';
+
+.#{$icon-prefix-cls} {
+    @include iconBase;
+
+    // 尺寸相关 
+    &.#{$icon-prefix-cls} {
+        &-lg {
+            width: $lg;
+            height: $lg;
+        }
+
+        &-md {
+            width: $md;
+            height: $md;
+        }
+
+        &-sm {
+            width: $sm;
+            height: $sm;
+        }
+
+        // 只考虑10px到1000px的size
+        @for $i from 10 through 1000 {
+            &-#{$i} {
+                width: $i + px;
+                height: $i + px;
+            }
+        }
+    }
+}

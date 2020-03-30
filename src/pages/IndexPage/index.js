@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@components/Button';
+import { Icon } from '@components/Icon';
 import './index.scss';
 
 function Example() {
@@ -22,6 +23,10 @@ function Example() {
      <Button
         type="stroke" 
         shape="round"
+      />
+      <Icon 
+          type="search"
+          size={24}
       />
     </div>
   );
