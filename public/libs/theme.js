@@ -5,7 +5,7 @@
  * @Email: xujl@weipaitang.com
  * @Date: 2020-03-20 15:32:36
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-03-28 14:00:46
+ * @LastEditTime: 2020-04-14 17:43:53
  */
 window.theme = 'rui-';
 
@@ -14,5 +14,5 @@ window.theme = 'rui-';
 (function(){
     const patt = /^window.theme-?/gi;
 
-    console.log(document.querySelectorAll(patt))
+    // console.log(document.querySelectorAll(patt))
 })();

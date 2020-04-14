@@ -1,32 +1,15 @@
 import React from 'react';
-import { Button } from '@components/Button';
-import { Icon } from '@components/Icon';
+// import { Button } from '@components/Button';
+// import { Icon } from '@components/Icon';
+import { TextTransition } from '@components/TextTransition';
 import './index.scss';
 
 function Example() {
   return (
     <div className="hello">
-      <Button
-        type="bubble" 
-        shape="round"
-      > click me</Button>
-
-      <Button
-        type="cutdown" 
-        shape="round"
-      />
-
-      <Button
-        type="wave" 
-      />
-
-     <Button
-        type="stroke" 
-        shape="round"
-      />
-      <Icon 
-          type="search"
-          size={24}
+      <TextTransition 
+          type="down"
+          text="土地是以它的肥沃和收获而被估价的。"
       />
     </div>
   );

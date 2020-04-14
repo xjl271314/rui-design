@@ -1,0 +1,48 @@
+@import './animate.scss';
+
+.wrap{
+    span{
+        @extend .animated;
+        display: inline-block;
+    }
+}
+
+// 正常模式
+.normal {
+    span{
+        @extend .fadeIn;
+    }
+}
+
+.right {
+    span{
+        @extend .fadeInRight;
+    }
+}
+
+.left{
+    span{
+        @extend .fadeInLeft;
+    }
+}
+
+.up{
+    span{
+        @extend .fadeInUp;
+    }
+}
+
+.down{
+    span{
+        @extend .fadeInDown;
+    }
+}
+
+.random{
+    $list: fadeIn, fadeInDown, fadeInLeft, fadeInRight;
+    $key: random(4);
+    $nth: nth($list, $key);
+    span{
+        @extend .#{$nth};
+    }
+}
