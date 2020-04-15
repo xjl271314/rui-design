@@ -1,16 +1,12 @@
+
 import React from 'react';
-// import { Button } from '@components/Button';
-// import { Icon } from '@components/Icon';
-import { TextTransition } from '@components/TextTransition';
+import { Icon } from '@components/Icon';
 import './index.scss';
 
 function Example() {
   return (
     <div className="hello">
-      <TextTransition 
-          type="down"
-          text="土地是以它的肥沃和收获而被估价的。"
-      />
+      <Icon type="starbucks" size={48}/ >
     </div>
   );
 }

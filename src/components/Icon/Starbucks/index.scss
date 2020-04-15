@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Santana-Black;
+    src: url(fonts/santana-black.woff2) format("woff2"), url(fonts/santana-black.woff) format("woff");
+}
+svg {
+    width: 100%;
+}
+text {
+    font-family: Santana-Black, sans-serif;
+    fill: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+.coffee {
+    letter-spacing: 6px;
+}
