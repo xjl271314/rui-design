@@ -4,23 +4,24 @@
  */
 import { useRef, useEffect } from 'react'
 
-function useInterval(callback, delay = 300) {
-    const intervalFn = useRef();
+export default function useInterval(callback, delay = 1000) {
+    const intervalFn = useRef({});
 
-    // remember the latest callback
     useEffect(() => {
-        intervalFn.current = callback;
+        intervalFn.current.callback = callback;
     }, [callback]);
 
-    // set the interval
     useEffect(() => {
-        if (delay) {
-            const timer = setInterval(() => {
-                intervalFn.current()
+        if (delay !== null) {
+            intervalFn.current.timer = setInterval(() => {
+                intervalFn.current.callback();
             }, delay)
-            return () => { timer && clearInterval(timer) }
+            return () => {
+              clearInterval(intervalFn.current.timer);
+              intervalFn.current = null;
+            }
         }
     }, [delay])
-}
 
-export default useInterval;
+    return intervalFn.current.timer 
+}

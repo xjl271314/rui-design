@@ -1,21 +1,14 @@
-/*
- * @Prd: 
- * @Link: 
- * @Author: xjl
- * @Email: xujl@weipaitang.com
- * @Date: 2020-03-28 11:16:50
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-04-15 10:06:30
- */
 import React from 'react';
 import Heart from './Heart';
 import Search from './Search';
 import Starbucks from './Starbucks';
+import Live from './Live';
 
 const IconTypes = {
 'heart':Heart,
 'search':Search,
 'starbucks':Starbucks,
+'live':Live
 }
 
 const Icon = props =>{

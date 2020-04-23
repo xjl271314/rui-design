@@ -4,6 +4,7 @@ import ClassNames from 'classnames';
 export const prefixCls =  window.theme.concat('icon');
 
 // 判断变量是number或者同等string类型
+// eslint-disable-next-line
 const isNumberString = val => val && (Number(val) == String(val));
 
 // 判断变量是数组或者对象并且是[x,y] || {w:number,h:number}]
@@ -43,11 +44,12 @@ export const sizeCls = size =>{
 }
 
 // classes
-export const classes = ({ className, type, size = 'md' })=> ClassNames(
+export const classes = ({ className, type, size = 'md' }, ...others)=> ClassNames(
     prefixCls,
     className,
     {
         [`${prefixCls}-${type}`]: type,
         [`${prefixCls}-${sizeCls(size)}`]: sizeCls(size),
-    }
+    },
+    ...others
 )

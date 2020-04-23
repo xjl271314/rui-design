@@ -11,7 +11,7 @@ const IconHeart = props => {
         <div 
             className={classes(props)}
             onClick = {onClick}
-        ></div>
+        />
     )
 }
 
