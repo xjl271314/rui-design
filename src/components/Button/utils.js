@@ -30,12 +30,13 @@ export const sizeCls = size =>{
 }
 
 // classes
-export const classes = ({ className, type, shape, size = 'md' })=> ClassNames(
+export const classes = ({ className, type, shape, size = 'md' }, ...others)=> ClassNames(
     prefixCls,
     className,
     {
         [`${prefixCls}-${type}`]: type,
         [`${prefixCls}-${shape}`]: shapeCls(shape),
         [`${prefixCls}-${sizeCls(size)}`]: sizeCls(size),
-    }
+    },
+    ...others
 )

@@ -1,22 +1,26 @@
-/*
- * @Desc: 
- * @Prd: 
- * @Link: 
- * @Author: xjl
- * @Email: xujl@weipaitang.com
- * @Date: 2020-03-28 10:57:07
- * @LastEditTime: 2020-04-23 16:03:01
- */
-
 import React from 'react';
-import { Icon } from '@components/Icon';
+import { Card } from 'antd-mobile';
+import MyCard from '@components/Card';
 import './index.scss';
 
 function Example() {
   return (
     <div className="hello">
-      <Icon type="live" size={20} number={3} / >
-      <Icon type="heart" size={20}/ >
+      <Card >
+        <Card.Header
+          title="This is title"
+          thumb="https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg"
+          extra={<span>this is extra</span>}
+        />
+        <Card.Body>
+          <div>This is content of `Card`</div>
+        </Card.Body>
+        <Card.Footer content="footer content" extra={<div>extra footer content</div>} />
+      </Card>
+
+      <MyCard >
+        11111
+      </MyCard>
     </div>
   );
 }

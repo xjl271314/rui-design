@@ -27,6 +27,6 @@ module.exports = override(
     }),
     // antd
     fixBabelImports("import", {
-        libraryName: "antd", style: true // change importing css to less
+        libraryName: "antd-mobile", style: true // change importing css to less
     })
 )

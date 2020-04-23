@@ -1,4 +1,4 @@
-<!-- # Button组件设计需求
+# Button组件设计需求
 
 - type 传入type可以选择已经定义的button类型 ------OK
 - theme css样式button的主题
@@ -13,7 +13,7 @@
 - waves 是否使用类似谷歌materials design点击按钮的水波纹效果 ----OK
 - 其他原生button支持的属性 -->
  
-<!-- ---
+---
 name: Button
 route: /button
 ---
@@ -29,4 +29,4 @@ import Button from './index.js'
  
 <Playground>
  <Button>Click me</Button>
-</Playground> -->
+</Playground>
