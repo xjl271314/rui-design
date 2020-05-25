@@ -5,6 +5,7 @@ import Starbucks from './Starbucks';
 import Live from './Live';
 import Location from './Location';
 import Success from './Success';
+import Error from './Error';
 
 const IconTypes = {
 'heart':Heart,
@@ -12,7 +13,8 @@ const IconTypes = {
 'starbucks':Starbucks,
 'live':Live,
 'location': Location,
-'success': Success
+'success': Success,
+'error': Error
 }
 
 const Icon = props =>{
