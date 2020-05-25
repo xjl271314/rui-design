@@ -1,0 +1,9 @@
+@import 'theme.scss';
+.icon-success-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+.icon-success{
+    fill: $successColor;
+}
+}

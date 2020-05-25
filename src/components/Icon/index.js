@@ -4,13 +4,15 @@ import Search from './Search';
 import Starbucks from './Starbucks';
 import Live from './Live';
 import Location from './Location';
+import Success from './Success';
 
 const IconTypes = {
 'heart':Heart,
 'search':Search,
 'starbucks':Starbucks,
 'live':Live,
-'location': Location
+'location': Location,
+'success': Success
 }
 
 const Icon = props =>{
