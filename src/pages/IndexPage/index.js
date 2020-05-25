@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from '@components/Icon';
-import Message from '@components/Message';
+import Notification from '@components/Notification';
 
 import './index.scss';
 
@@ -8,12 +8,12 @@ function Example() {
   return (
     <div className="hello">
       <Icon type="success" />
-      {Message.pop({
-          type: 'success',
-          content: '操作成功!',
-          theme:'dark',
-          duration:null
-      })}
+      {Notification.pop({
+            type: 'success',
+            message: '趣谈前端学习打卡',
+            description: '前端基础，中级进阶，高级打卡，一起玩转前端，996远离你',
+            duration: null
+        })}
     </div>
   );
 }
