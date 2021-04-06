@@ -1,0 +1,102 @@
+.circleContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+
+        &.wrapLeft {
+            left: 0;
+        }
+
+        &.wrapRight {
+            left: 50%;
+        }
+    }
+
+    .left,
+    .right {
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        width: 200%;
+        height: 100%;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 50%;
+        animation-name: rightRoate;
+        animation-timing-function: linear;
+
+        &.fnished {
+            border-color: transparent !important;
+        }
+    }
+
+    .left {
+        left: 0;
+
+    }
+
+    .right {
+        right: 0;
+    }
+
+    .circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: rgba(0, 0, 0, 1);
+        border-radius: 50%;
+        color: #FFF;
+    }
+
+    @keyframes rightRoate {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(-180deg);
+        }
+    }
+
+    @keyframes leftRoate {
+        from {
+            transform: rotate(-180deg);
+        }
+
+        to {
+            transform: rotate(0);
+        }
+    }
+}
+
+// svg版本
+
+.svgBox {
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(90deg);
+    }
+
+    .progress {
+        stroke-dashoffset: 0;
+        transition-timing-function: linear;
+    }
+}

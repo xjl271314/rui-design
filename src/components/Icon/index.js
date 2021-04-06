@@ -3,6 +3,7 @@ import Heart from './Heart';
 import Search from './Search';
 import Starbucks from './Starbucks';
 import Live from './Live';
+import Like from './Like';
 import Location from './Location';
 import Success from './Success';
 import Error from './Error';
@@ -14,7 +15,8 @@ const IconTypes = {
 'live':Live,
 'location': Location,
 'success': Success,
-'error': Error
+'error': Error,
+'like': Like,
 }
 
 const Icon = props =>{

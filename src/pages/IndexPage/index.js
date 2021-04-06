@@ -7,7 +7,7 @@ import './index.scss';
 function Example() {
   return (
     <div className="hello">
-      <Icon type="success" animated />
+      <Icon type="like" />
     </div>
   );
 }
